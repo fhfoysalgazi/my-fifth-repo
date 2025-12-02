@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>30-line HTML Demo</title>
+<style>
+body{font-family:system-ui,Segoe UI,Arial;margin:20px}
+header,footer{padding:10px;background:#f3f3f3;border-radius:8px}
+main{margin:12px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.card{padding:8px;border:1px solid #e5e5e5;border-radius:6px}
+</style></head>
+<body>
+<header><h1>Simple 30-line Demo</h1></header>
+<main>
+<p>A compact page demonstrating semantic elements and minimal CSS.</p>
+<section class="grid">
+<article class="card"><h2>Card A</h2>
+<p>Short description A.</p></article>
+<article class="card"><h2>Card B</h2>
+<p>Short description B.</p></article>
+</section>
+</main>
+<footer>© 2025 Demo — Editable HTML</footer>
+<script>
+// Small interactive snippet
+document.querySelectorAll('.card').forEach(c=>c.addEventListener('click',()=>alert(c.querySelector('h2').innerText)));
+</script>
+</body></html>
